@@ -23,7 +23,11 @@ public class HomePage extends Page{
 	public LoginPage gotoLogin() {
 		
 		System.out.println("Starting the login Action");
-		home.loginBtn.click();
+		
+		//home.loginBtn.click();
+		
+		click(home.loginBtn);
+		
 		System.out.println("clicked on the login button");
 		return new LoginPage();
 	}

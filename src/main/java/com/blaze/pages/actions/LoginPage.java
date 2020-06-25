@@ -18,15 +18,22 @@ public class LoginPage extends Page {
 
 	public HomePage enterLoginDetails() throws InterruptedException {
 
-		loginpage.userNameElement.sendKeys("sandeepnegi1996");
+		//loginpage.userNameElement.sendKeys("sandeepnegi1996");
+		
+		type(loginpage.userNameElement,"sandeepnegi1996");
+		
 
 		System.out.println("Enetering the username for Login");
 
 		Thread.sleep(3000);
 
-		loginpage.inputPassword.sendKeys("S@ndeep96");
+/*		loginpage.inputPassword.sendKeys("S@ndeep96");
+*/		
+		type(loginpage.inputPassword,"S@ndeep96");
 
-		loginpage.loginBtn1.click();
+		//loginpage.loginBtn1.click();
+		
+		click(loginpage.loginBtn1);
 
 		Thread.sleep(3000);
 

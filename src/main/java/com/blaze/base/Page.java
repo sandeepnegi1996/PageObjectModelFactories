@@ -3,6 +3,7 @@ package com.blaze.base;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -33,6 +34,23 @@ public class Page {
 	public static void quitBrowser() {
 		if (driver != null)
 			driver.quit();
+	}
+	
+	
+	public static void click(WebElement element) {
+		element.click();
+		
+		// log.debug
+		System.out.println("clicking");
+		
+		
+	}
+	
+	
+	public static void type(WebElement element,String str) {
+		element.sendKeys(str);
+		
+		System.out.println("Entering the data");
 	}
 
 }
