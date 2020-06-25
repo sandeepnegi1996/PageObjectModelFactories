@@ -3,12 +3,10 @@ package com.blaze.pages.locators;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class HomePageLocators {
+public class TopNavigationLocators {
 	
 	
-	@FindBy(css = "#login2")
-	public  WebElement loginBtn;
-	
-	
+	@FindBy(xpath = "//a[contains(text(),'Cart')]")
+	public WebElement cartElement;
 
 }
